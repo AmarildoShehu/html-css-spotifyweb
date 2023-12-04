@@ -11,7 +11,7 @@ body{
     
 }
 
-/*General*/
+/*utils*/
 
 .container {
   display: flex;
@@ -24,6 +24,9 @@ body{
     width: 30px;
 }
 
+ul{
+  list-style-type: none;
+}
 /*Layout*/
 
 .main {
@@ -39,25 +42,46 @@ body{
   position: sticky;
   top: 0;
   height: calc(100vh - 40px);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30%;
+
+  flex-basis: 10%;
 }
+
 .spotify-text{
-    display: flex;
-    gap: 10px;
-    align-items: center;
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 #spotify{
-    display: none;
-    font-size: 20px;
-    font-weight: 500;
+  display: none;
+  font-size: 20px;
+  font-weight: 500;
 }
+
+.sidebar-logo{
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+#playlist{
+  display: none;
+}
+
+
 /*CONTENT SECTION*/
 .content {
   display: flex;
   flex-direction: column;
   height: 100%;
+  flex-basis: 90%;
 }
 
+/*HEADER BAR*/
 header {
   color: white;
   background-color: #080B12;
@@ -66,12 +90,28 @@ header {
   top: 0;
 }
 
-section {
+.head-bar{
+  text-align: end;
+}
+
+#upgrade-btn{
+  text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 30px;
+    border: 1px solid white;
+    border-radius: 20px;
+    font-size: small;
+}
+
+/*playbox*/
+.play-box {
   padding: 20px;
   color: white;
   background-color: #141922;
   border: 1px solid #ccc;
   overflow-y: auto;  /* Abilita la scrollbar*/
+  height: 100%;
 }
 
 
