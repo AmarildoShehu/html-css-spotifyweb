@@ -94,14 +94,22 @@ header {
   text-align: end;
 }
 
+/*HEADER BUTTON*/
 #upgrade-btn{
   text-decoration: none;
-    color: white;
-    font-weight: bold;
-    padding: 10px 30px;
-    border: 1px solid white;
-    border-radius: 20px;
-    font-size: small;
+  color: white;
+  font-weight: bold;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+  font-size: small;
+
+  display: inline-block;
+  transition: transform 0.3s ease;
+}
+
+#upgrade-btn:hover{
+  transform: scale(1.1);
 }
 
 /*playbox*/
