@@ -18,7 +18,7 @@ body{
 }
 
 .logo{
-    color: white;
+    color: #7A7D81;
     width: 30px;
     height: 30px;
 }
@@ -41,7 +41,7 @@ ul{
 
 /*SIDEBAR*/
 .sidebar {
-  color: white;
+  color: #7A7D81;
   background-color: #000000;
   padding: 10px;
   top: 0;
@@ -72,6 +72,9 @@ ul{
   display: none;
 }
 
+.sidebar-logo li:hover{
+  filter: brightness(150%); /* Aumenta la luminosità delle icone al passaggio del mouse */
+}
 
 /*CONTENT SECTION*/
 .content {
@@ -115,7 +118,7 @@ header {
 /*playbox*/
 .play-box {
   padding: 20px;
-  color: white;
+  color: #7A7D81;
   background-color: #141922;
   border: 1px solid #ccc;
 
@@ -130,8 +133,13 @@ header {
 }
 
 .music-bar-selection li{
-  padding: 5px;
+    padding: 5px;
 }
+.music-bar-selection li:hover{
+  filter: brightness(170%);
+}
+
+/*PLAYLIST _ LIST*/
 
 .playlist-list {
   display: flex;
@@ -145,10 +153,38 @@ header {
 .playlist-section h6{
   margin: 5px 0;
 }
-.playlist-list img{
-  height: 12rem;
-  margin: 10px 0;
+
+.image-container {
+  position: relative;
+  display: inline-block;
 }
+
+.main-img {
+  display: block;
+  width: 200px;
+  height: auto; 
+  transition: filter 0.3s ease; 
+}
+
+.icon-overlay {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0; 
+  transition: opacity 0.3s ease;
+  font-size: 3em;
+}
+
+.image-container:hover .main-img {
+  filter: brightness(70%); 
+}
+
+.image-container:hover .icon-overlay {
+  opacity: 1;
+}
+
 
 .playlist-list p{
   text-align: center;
