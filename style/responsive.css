@@ -1,10 +1,14 @@
 
 @media screen and (min-width: 639px) {
     
+    /*SIDEBAR*/
     .sidebar{
-        flex-basis: 300px;
+        flex-basis: 350px;
     }
     #spotify{
         display: inline;
+    }
+    #new-playlist {
+    display: inline;
     }
 }
