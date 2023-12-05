@@ -26,6 +26,11 @@ body{
 ul{
   list-style-type: none;
 }
+
+.flex-col{
+  display: flex;
+  flex-direction: column;
+}
 /*Layout*/
 
 .main {
@@ -43,7 +48,7 @@ ul{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 50px;
+  flex-basis: 100px;
 }
 
 .spotify-text{
@@ -144,12 +149,75 @@ header {
 
 /*FOOTER*/
 footer {
-  height: 40px;
- 
-  background-color: #282828;
-  color: #fff;
-  text-align: center;
-  padding: 10px 0;
+  height: 60px;
+    background-color: #282828;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
 
-  flex-shrink: 0;
+    flex-shrink: 0;
+  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    
+    flex-grow: 1;
+}
+
+/*LEFT FOOTER*/
+.left-footer{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  flex-basis: 25%;
+}
+
+.left-footer div{
+  gap: 5px;
+}
+.left-footer img{
+  width: 2rem;
+}
+
+/*FOOTER PLAYER*/
+
+.player{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+}
+.player-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 5px;
+}
+
+.player-bottom {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+.volume-line {
+  flex: 1;
+  height: 5px;
+  background-color: #ccc;
+  margin: 5px;
+  position: relative;
+}
+
+.player-bottom .volume-line .line-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #888;
+  width: 25%; 
+}
+
+
+.right-footer {
+  flex-basis: 25%;
 }
