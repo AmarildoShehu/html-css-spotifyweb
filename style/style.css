@@ -113,6 +113,7 @@ header {
   border: 1px solid #ccc;
   overflow-y: auto;  /* Abilita la scrollbar*/
   height: 100%;
+  border: none;
 }
 
 .music-bar-selection{
