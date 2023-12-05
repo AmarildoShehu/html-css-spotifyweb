@@ -31,6 +31,10 @@ ul{
   display: flex;
   flex-direction: column;
 }
+
+.radius50{
+  border-radius: 50%;
+}
 /*Layout*/
 
 .main {
@@ -91,6 +95,7 @@ header {
   padding: 20px;
   position: sticky;
   top: 0;
+  z-index: 1;
 }
 
 .head-bar{
