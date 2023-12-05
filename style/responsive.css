@@ -2,7 +2,7 @@
 @media screen and (min-width: 639px) {
     
     .sidebar{
-        flex-basis: 30%;
+        flex-basis: 230px;
     }
     #spotify{
         display: inline;

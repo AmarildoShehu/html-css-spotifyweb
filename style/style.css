@@ -7,16 +7,14 @@
 
 body{
     font-family: 'Montserrat';
-    margin: 0;
-    
 }
 
 /*utils*/
 
-.container {
+.wrapper {
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  max-width: 1500px;
 }
 
 .logo{
@@ -32,7 +30,8 @@ ul{
 
 .main {
   display: flex;
-  height: 100vh; 
+  flex-grow:1;
+  overflow:auto;
 }
 
 /*SIDEBAR*/
@@ -40,16 +39,11 @@ ul{
   color: white;
   background-color: #000000;
   padding: 10px;
-  position: sticky;
   top: 0;
-  height: calc(100vh - 40px);
-
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 30%;
-
-  flex-basis: 10%;
+  flex-basis: 50px;
 }
 
 .spotify-text{
@@ -78,14 +72,14 @@ ul{
 .content {
   display: flex;
   flex-direction: column;
-  height: calc(100vh - 40px);
-  flex-basis: 90%;
+  overflow:auto;
+  flex-grow:1;
 }
 
 /*HEADER BAR*/
 header {
   color: white;
-  background-color: #080B12;
+  background-color: rgb(8 11 18 / 91%);
   padding: 20px;
   position: sticky;
   top: 0;
@@ -111,8 +105,7 @@ header {
   color: white;
   background-color: #141922;
   border: 1px solid #ccc;
-  overflow-y: auto;  /* Abilita la scrollbar*/
-  height: 100%;
+
   border: none;
 }
 
@@ -151,13 +144,12 @@ header {
 
 /*FOOTER*/
 footer {
-  position: fixed;
   height: 40px;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+ 
   background-color: #282828;
   color: #fff;
   text-align: center;
   padding: 10px 0;
+
+  flex-shrink: 0;
 }
