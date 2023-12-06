@@ -54,6 +54,11 @@ ul{
 
 .hover-effect:hover{
   filter: brightness(190%);
+  cursor: pointer;
+}
+
+.align-text-c{
+  align-items: center;
 }
 /*Layout*/
 
@@ -186,23 +191,32 @@ header {
 
 .music-bar-selection li{
     padding: 5px;
+    font-weight: bold;
+    font-size: 14px;
 }
 
 /*PLAYLIST _ LIST*/
-
+.playlist-section h2{
+  margin: 15px 0;
+  color: white;
+}
 .playlist-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 30px;
 }
 
-.playlist-section h3{
+.playlist-section h4{
   margin: 10px 0;
+  color: white;
 }
-.playlist-section h6{
+.playlist-section h5{
   margin: 5px 0;
+  color #666666;
 }
-
+.playlist-section li{
+  text-align: center;
+}
 .image-container {
   position: relative;
   display: inline-block;
@@ -228,6 +242,7 @@ header {
 
 .image-container:hover .main-img {
   filter: brightness(70%); 
+  cursor: pointer;
 }
 
 .image-container:hover .icon-overlay {
@@ -253,15 +268,15 @@ footer {
   justify-content: space-between;
   align-items: center;
   padding: 20px;
+  flex: 1;
     
-  flex-grow: 1;
 }
 
 /*LEFT FOOTER*/
 .left-footer{
   display: flex;
   gap: 5px;
-  align-items: center;
+  align-items: start;
   flex-basis: 20%;
 }
 
@@ -272,6 +287,13 @@ footer {
   width: 2rem;
 }
 
+.left-footer h4{
+  color: white;
+}
+.left-footer h6, .fa-heart, .fa-folder{
+  color: #7A7D81;
+  margin: 0 10px;
+}
 /*FOOTER PLAYER*/
 
 .player{
@@ -314,7 +336,7 @@ footer {
 
 
 .right-footer {
-  flex-basis: 20%;
   display: flex;
+  flex-basis: 20%;
 }
 
