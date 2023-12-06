@@ -30,28 +30,32 @@
             <nav class="sidebar">
                 <div class="sidebar-logo">
                     <div class="spotify-text">
-                        <img class="logo" src="img/logo-small.svg" alt="">
-                        <span id="spotify">Spotify</span>
+                        <img class="logo d-sm-none" src="img/logo-small.svg" alt="">
+                        <img class="logo-big d-none d-sm-block" src="img/logo.svg" alt="">
                     </div>
     
                     <div class="sidebar-logo">
                         <ul>
                             <li>
                                 <img class="logo" src="img/home.svg" alt="">
-                                <span>Home</span>
+                                <span class="d-none d-sm-block">Home</span>
                             </li>
                             <li>
                                 <img class="logo" src="img/search.svg" alt="">
-                                <span>Cerca</span>
+                                <span class="d-none d-sm-block">Cerca</span>
                             </li>
                             <li>
-                                <img class="logo" src="img/libreria.svg" alt="">La tua libreria
-                                <span></span>
+                                <img class="logo" src="img/libreria.svg" alt="">
+                                <span class="d-none d-sm-block">La tua libreria</span>
                             </li>
                             <li id="new-playlist">
-                                <p>PLAYLIST</p>
+                                <p class="playlist-text">PLAYLIST</p>
                                 <ul>
-                                    <li><img src="" alt=""> Crea Playlist</li>
+                                    <li>
+                                        <div class="square">
+                                            <div class="plus">+</div>
+                                        </div>
+                                        Crea Playlist</li>
                                     <li><p>Nome Playlist</p></li>
                                     <li><p>Nome Playlist</p></li>
                                     <li><p>Nome Playlist</p></li>
@@ -198,7 +202,7 @@
     
         <!-- FOOTER PLAYER -->
         <footer>
-          <div class="left-footer">
+            <div class="left-footer">
             <picture>
                 <img src="img/sinister.jpeg" alt="">
             </picture>
@@ -211,9 +215,9 @@
                 <i class="far fa-folder"></i>
             </div>
 
-        </div>
+            </div>
 
-        <div class="player">
+            <div class="player">
             <div class="player-top">
                 <i class="fas fa-shuffle"></i>
                 <i class="fas fa-backward-step"></i>
@@ -228,9 +232,9 @@
                 </div>
                 <span>4:35</span>
             </div>
-        </div>
+            </div>
 
-        <div class="right-footer">
+            <div class="right-footer">
             <div class="volume">
                 <i class="fas fa-list-ul"></i>
                 <i class="fas fa-desktop"></i>
@@ -240,7 +244,7 @@
                 <div class="line-progress"></div>
             </div>
 
-        </div>
+            </div>
 
         </footer>
     </div>

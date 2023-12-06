@@ -35,12 +35,32 @@ ul{
 .radius50{
   border-radius: 50%;
 }
+
+.d-flex{
+  display: flex;
+}
+
+.d-none{
+  display: none;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-inline{
+  display: inline;
+}
+span{
+  font-weight: bold;
+  font-size: 14px;
+}
 /*Layout*/
 
 .main {
   display: flex;
   flex-grow:1;
-  overflow:auto;
+  overflow: hidden;
 }
 
 /*SIDEBAR*/
@@ -55,16 +75,15 @@ ul{
   flex-basis: 100px;
 }
 
-.spotify-text{
-  display: flex;
-  gap: 10px;
-  align-items: center;
+.logo-text{
+
 }
 
 #spotify{
   display: none;
   font-size: 25px;
-    font-weight: 600;
+  font-weight: 600;
+  color: white;
 }
 
 .sidebar-logo{
@@ -72,12 +91,55 @@ ul{
   flex-direction: column;
   row-gap: 20px;
 }
+
+
 #new-playlist{
   display: none;
 }
 
+#new-playlist li{
+  margin: 10px 0;
+}
+
+#new-playlist p:hover{
+  filter: brightness(190%);
+}
+.playlist-text{
+  color: white;
+  margin: 20px 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.sidebar li{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-weight: bold;
+  font-size: 14px;
+}
 .sidebar-logo li:hover{
-  filter: brightness(150%); /* Aumenta la luminosità delle icone al passaggio del mouse */
+  filter: brightness(190%); /* Aumenta la luminosità delle icone al passaggio del mouse */
+}
+
+.sidebar-logo span{
+  font-weight: bold;
+  font-size: 14px;
+}
+/*SQUERE PLUS ICON*/
+.square {
+  width: 30px;
+  height: 30px;
+  background-color: #A3A3A3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.plus {
+  font-size:30px;
+  font-weight: bolder;
+  color: #000000;
 }
 
 /*CONTENT SECTION*/

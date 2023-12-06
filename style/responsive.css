@@ -11,4 +11,22 @@
     #new-playlist {
     display: inline;
     }
+
+    .d-sm-none{
+        display: none;
+    }
+    
+    .d-sm-block{
+        display: block;
+    }
+
+
+}
+
+@media screen and (min-width: 878px) {
+    .main-img{
+        width: 150px;
+        overflow: hidden;
+    }
+
 }
