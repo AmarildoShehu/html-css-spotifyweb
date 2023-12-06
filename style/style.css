@@ -97,6 +97,10 @@ ul{
   margin: 10px 0;
 }
 
+#new-playlist ul{
+  overflow-y: auto;
+  height: 200px;
+}
 
 .playlist-text{
   color: white;
@@ -262,14 +266,11 @@ footer {
   color: #fff;
   text-align: center;
   padding: 10px 0;
-  flex-shrink: 0;
   
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  flex: 1;
-    
+  padding: 20px;  
 }
 
 /*LEFT FOOTER*/
@@ -334,7 +335,10 @@ footer {
   width: 20%; 
 }
 
-
+.line-progress:hover{
+  background-color: chartreuse;
+  cursor: pointer;
+}
 .right-footer {
   display: flex;
   flex-basis: 20%;
