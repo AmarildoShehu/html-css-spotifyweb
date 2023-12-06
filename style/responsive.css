@@ -18,18 +18,12 @@
         display: block;
     }
 
-
-
     .main-img{
         width: 150px;
     }
-
-
 }
 
 @media screen and (min-width: 878px) {
-    .main-img{
-    
-    }
+   
 
 }
