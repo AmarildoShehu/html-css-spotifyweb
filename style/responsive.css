@@ -7,7 +7,7 @@
         display: inline;
     }
     #new-playlist {
-    display: inline;
+        display: inline;
     }
 
     .d-sm-none{
@@ -24,6 +24,7 @@
 }
 
 @media screen and (min-width: 878px) {
-   
-
+    .main-img{
+        width: 180px;
+    }
 }
