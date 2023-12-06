@@ -3,7 +3,7 @@
     
     /*SIDEBAR*/
     .sidebar{
-        flex-basis: 350px;
+        flex-basis:300px;
     }
     #spotify{
         display: inline;
@@ -21,12 +21,17 @@
     }
 
 
+
+    .main-img{
+        width: 150px;
+    }
+
+
 }
 
 @media screen and (min-width: 878px) {
     .main-img{
-        width: 150px;
-        overflow: hidden;
+    
     }
 
 }

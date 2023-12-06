@@ -59,7 +59,6 @@ span{
 
 .main {
   display: flex;
-  flex-grow:1;
   overflow: hidden;
 }
 
@@ -75,23 +74,15 @@ span{
   flex-basis: 100px;
 }
 
-.logo-text{
-
-}
-
-#spotify{
-  display: none;
-  font-size: 25px;
-  font-weight: 600;
-  color: white;
-}
-
 .sidebar-logo{
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
 
+.logo-big{
+  width: 200px;
+}
 
 #new-playlist{
   display: none;
@@ -147,7 +138,6 @@ span{
   display: flex;
   flex-direction: column;
   overflow:auto;
-  flex-grow:1;
 }
 
 /*HEADER BAR*/
