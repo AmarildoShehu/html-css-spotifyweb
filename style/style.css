@@ -51,9 +51,9 @@ ul{
 .d-inline{
   display: inline;
 }
-span{
-  font-weight: bold;
-  font-size: 14px;
+
+.hover-effect:hover{
+  filter: brightness(190%);
 }
 /*Layout*/
 
@@ -71,7 +71,6 @@ span{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  flex-basis: 100px;
 }
 
 .sidebar-logo{
@@ -81,7 +80,8 @@ span{
 }
 
 .logo-big{
-  width: 200px;
+  width: 180px;
+  margin-right: 30px;
 }
 
 #new-playlist{
@@ -92,9 +92,7 @@ span{
   margin: 10px 0;
 }
 
-#new-playlist p:hover{
-  filter: brightness(190%);
-}
+
 .playlist-text{
   color: white;
   margin: 20px 0;
@@ -108,9 +106,6 @@ span{
   gap: 20px;
   font-weight: bold;
   font-size: 14px;
-}
-.sidebar-logo li:hover{
-  filter: brightness(190%); /* Aumenta la luminosità delle icone al passaggio del mouse */
 }
 
 .sidebar-logo span{
@@ -191,9 +186,6 @@ header {
 
 .music-bar-selection li{
     padding: 5px;
-}
-.music-bar-selection li:hover{
-  filter: brightness(170%);
 }
 
 /*PLAYLIST _ LIST*/
