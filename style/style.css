@@ -60,6 +60,23 @@ ul{
 .align-text-c{
   align-items: center;
 }
+
+.pos-relative{
+  position: relative;
+}
+.active::after {
+  content: '';
+  text-align: center;
+  position: absolute;
+
+  bottom: -1px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 30%; 
+  height: 2px; 
+  background-color: greenyellow; 
+}
 /*Layout*/
 
 .main {
@@ -197,6 +214,11 @@ header {
     padding: 5px;
     font-weight: bold;
     font-size: 14px;
+}
+
+.music-bar-selection a{
+  text-decoration: none;
+  color: #7A7D81;
 }
 
 /*PLAYLIST _ LIST*/
